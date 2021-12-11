@@ -18,21 +18,21 @@ public class Maximum {
 		return max;
 	}
 	
-	// Take Input as integer number
-		public void findMaxInteger() {
+	// Take Input as float number
+		public void findMaxFloat() {
 			Maximum max = new Maximum();
-			System.out.println("Enter 3 integer number");
+			System.out.println("Enter 3 float number");
 			Scanner sc = new Scanner(System.in);
-			int num1 = sc.nextInt();
-			int num2 = sc.nextInt();
-			int num3 = sc.nextInt();
+			float num1 = sc.nextFloat();
+			float num2 = sc.nextFloat();
+			float num3 = sc.nextFloat();
 
-			System.out.println("Maximum integer number is:" + max.findMax(num1, num2, num3));
+			System.out.println("Maximum float number is:" + max.findMax(num1, num2, num3));
 		}
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Generic Practice Problem");
 		Maximum max = new Maximum();
-		max.findMaxInteger();
+		max.findMaxFloat();
 	}
 }
