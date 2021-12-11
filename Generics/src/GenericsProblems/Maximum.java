@@ -19,10 +19,35 @@ public class Maximum {
 		return max;
 	}
 
+	// Taking input as an integer
+	public void findMaxInteger() {
+		Maximum mx = new Maximum();
+		System.out.println("Enter 3 integer numbers");
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
+
+		System.out.println("Your maximum integer number is:" + mx.findMax(num1, num2, num3));
+	}
+
+	// Taking input as a float
+	public void findMaxFloat() {
+		Maximum mx = new Maximum();
+		System.out.println("Enter 3 float numbers");
+		Scanner sc = new Scanner(System.in);
+
+		float num1 = sc.nextFloat();
+		float num2 = sc.nextFloat();
+		float num3 = sc.nextFloat();
+
+		System.out.println("Your maximum float number is:" + mx.findMax(num1, num2, num3));
+	}
+
 	// Take Input as String number
 	public void findMaxString() {
 		Maximum max = new Maximum();
-		System.out.println("Enter 3 String number");
+		System.out.println("Enter 3 String numbers");
 		Scanner sc = new Scanner(System.in);
 		String num1 = sc.next();
 		String num2 = sc.next();
@@ -34,6 +59,8 @@ public class Maximum {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Generic Practice Set");
 		Maximum max = new Maximum();
+		max.findMaxString();
+		max.findMaxInteger();
 		max.findMaxString();
 	}
 }
